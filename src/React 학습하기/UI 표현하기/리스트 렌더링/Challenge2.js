@@ -18,7 +18,7 @@ function Recipe({id, name, ingredients}) { // map의 중첩을 막기 위해 Rec
       <h2>{name}</h2>
       <ul>
         {ingredients.map(ingredient =>
-          <li key={ingredient}>{ingredient}</li>
+          <li key={ingredient + id}>{ingredient}</li>
         )}
       </ul>
     </div>
@@ -30,7 +30,7 @@ export default function RecipeList() {
     <div>
       <h1>Recipes</h1>
       {recipes.map(recipe =>
-        <Recipe {...recipe} key={recipe.id} />
+        <Recipe {...recipe} />
       )} 
     </div>
   );

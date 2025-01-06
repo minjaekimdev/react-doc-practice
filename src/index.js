@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './React 학습하기/UI 표현하기/리스트 렌더링/Challenge4';
+import App from './React 학습하기/상호작용성 더하기/컴포넌트의 지역 저장소 State/Challenge4';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+
+const currentTime = new Date();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <App time={currentTime} />
     </BrowserRouter>
   </React.StrictMode>
 );
