@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './React 학습하기/상호작용성 더하기/객체 State 업데이트하기/Challenge3/App';
+import App from './React 학습하기/상호작용성 더하기/배열 State 업데이트하기/Challenge4/App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
